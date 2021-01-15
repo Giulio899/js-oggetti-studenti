@@ -47,8 +47,7 @@ var arrayStudenti = [
 
 // stampare nome e cognome di ciascuno studente
 for (var i = 0; i < arrayStudenti.length; i++) {
-    console.log('stampa nomi arrayStudenti', arrayStudenti[i].nome);
-    console.log('stampa cognomi arrayStudenti', arrayStudenti[i].cognome);
+    console.log('stampa nomi e cognomi arrayStudenti: ', arrayStudenti[i].nome + ' ' + arrayStudenti[i].cognome);
 }
 
 // Richiesta dati a nuovo studente
