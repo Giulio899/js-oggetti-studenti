@@ -4,16 +4,19 @@
 // - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 
+// Oggetto che descrive studente
 var studente = {
   nome: 'Giulio',
   cognome: 'Tavoni',
   eta: 31
 };
 
+// stampa proprietà oggetto studente
 for (var k in studente) {
   console.log('stampa proprietà oggetto studente: ', studente[k]);
 }
 
+// array di oggetti di studenti
 var arrayStudenti = [
   {
     nome: 'Alessandro',
@@ -42,12 +45,13 @@ var arrayStudenti = [
   }
 ];
 
-
+// stampare nome e cognome di ciascuno studente
 for (var i = 0; i < arrayStudenti.length; i++) {
     console.log('stampa nomi arrayStudenti', arrayStudenti[i].nome);
     console.log('stampa cognomi arrayStudenti', arrayStudenti[i].cognome);
 }
 
+// Richiesta dati a nuovo studente
 var nome, cognome, eta;
 
 for (var i = 0; i < 3; i++) {
@@ -57,16 +61,18 @@ for (var i = 0; i < 3; i++) {
   if (i == 1) {
     cognome = prompt('Indica il tuo cognome');
   }
-  if (i == 1) {
+  if (i == 2) {
     eta = parseInt(prompt('Indica la tua età'));
   }
 }
 
+// creazione nuovo oggetto studente
 var nuovoStudente = {
   nome: nome,
   cognome: cognome,
   eta: eta
 }
 
+// aggiunta nuovo oggetto studente ad array già creato
 arrayStudenti.push(nuovoStudente);
 console.log('stampa arrayStudenti con aggiunta nuovo studente', arrayStudenti);
